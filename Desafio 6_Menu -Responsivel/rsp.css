@@ -1,0 +1,383 @@
+*{
+    margin:0 ;
+    padding:0 ;
+}
+
+@font-face {
+    font-family:'DroidSerif' ;
+    src: url('../fontes/DroidSerif-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family:'OpenSans' ;
+    src: url('../fontes/OpenSans-Regular.ttf') format('truetype');
+}
+
+
+
+img{
+    margin-right: 260px;
+
+}
+h3{
+    color: rgb(247, 165, 178);
+    margin-top: -20px;
+    margin-left: 80px;
+   
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+
+
+nav{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(248, 246, 253);
+   
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list button{
+    border: 1.5px solid rgb(70, 70, 138);
+    border-bottom: 5px solid rgb(70, 70, 138);
+    border-radius: 7px;
+    background: white;
+    width: 70px;
+    height:35px ;
+    cursor: pointer;
+    margin-top: -20px;
+    
+}
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 100px;
+   
+    
+}
+
+a:hover{
+    background: (violet);
+    font-size: 16.5px;
+    opacity: 1;
+    border-bottom: 1px solid rgb(174, 145, 241);
+    box-shadow:2px 2px 0px 1px rgb(129, 193, 236);
+    transition: 0.2s;
+
+
+}
+ul li button:hover{
+    background-color: violet;
+    color: white;
+    transition: 1s;
+    transition:transform 0.5s;
+}
+.mobile-menu {
+    display: nome;
+    cursor: pointer;
+    align-items:flex-end;
+    justify-content:left;
+
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    transition: o.3s;
+}
+#icone{
+    display: none;
+    
+}
+.tablet{
+    display: none;
+}
+
+/*----------------------*/
+
+main{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    font-family: 'DroidSerif';
+   
+}
+.form input{
+
+border-radius: 7px;
+opacity: 0.7;
+margin-top:10px;
+display: flex;
+margin-left:10px ;
+
+width: 100%;
+height: 35px;
+border:1px solid;
+
+}
+
+ 
+.msg{
+    height: 55px;
+    border:1px solid;
+   
+}
+.first div{
+    display:flex;
+    background: blue;
+    
+}
+.nav-main{
+    width: 800px;
+    height: ;
+}
+.nav-main h1{
+    
+    color: rgb(91, 91, 148);
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+
+}
+#button{
+    background: rgb(250, 169, 232);
+    width: 60px;
+    height: 50px;
+    margin-top: 70px;
+    border: 0px ;
+    border-bottom: 4px solid rgb(70, 70, 138);
+    border-radius: 7px;
+    cursor: pointer;
+    height: 10rem 10rem;
+    width: 11rem;
+    font-family: "DroidSerif";
+    font-size: 17px;
+
+}
+
+
+
+
+
+#button:hover{
+    font-size: 19px;
+    background: rgb(226, 76, 219);
+    color: white;
+    box-shadow:2px 2px 0px 1px rgb(70, 70, 138);
+   }
+
+
+
+
+.image {
+    height: 100%;
+    width: 100%;
+
+}
+
+/*------Responsivo-----*/
+
+
+ @media (max-width: 700px){
+     body {
+         overflow-x: hidden;
+     }
+   #icone{
+       display: block;
+      margin-inline-end: -15px;
+
+   }
+
+   img{
+    display: none;
+   }
+
+h3{
+    margin-top: -10px;
+    margin-left: -30px;
+    justify-items: flex-start;
+}
+
+     
+ .nav-list { 
+     position: absolute;
+     top: 10vh;
+     margin-right: 0.2vh;
+     right: 0vw;
+     width: 40vw;
+     height: 60vh;
+     background: rgb(212, 214, 223);
+     align-items:center;
+     justify-content:space-evenly;
+     transition-duration: 2s;
+     flex-direction: column;
+     
+ }}
+
+
+ 
+
+
+ @media (max-width: 500px){
+    body {
+        overflow-x: hidden;
+    }
+  main{
+      display: none;
+  }
+  .tablet{
+      display: block;
+  }
+
+ 
+ .nav-list li a{
+     transition: 0.2s;
+     
+ }
+
+
+ }
+ /* -----------tablet------------------*/
+#header h1{
+color: rgb(76, 34, 116);
+font-size: 80px;
+margin-top: 15px;
+margin-bottom: 15px;
+
+
+}
+#header p{
+margin-bottom: 35px;
+}
+.tablet #header{
+   border-bottom: 1px solid ;
+    text-align: end;
+}
+
+.tablet #nav-tablet{
+    margin-top: 80px;
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+   
+}
+
+
+.tablet .name
+{
+    border: 1px solid white;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 40px;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(207, 172, 172, 0.5);
+}
+.tablet .subject{
+    border: 1px solid  white;
+    box-shadow: 2px 2px 2px rgba(207, 172, 172, 0.5);
+    margin-bottom: 15px;
+    margin-left: 40px;
+    border-radius: 8px;
+    width: 80%;
+    height: 40px;
+}
+.tablet .message{
+    border: 1px solid  white;
+    box-shadow: 2px 2px 2px rgba(207, 172, 172, 0.5);
+    margin-bottom: 15px;
+    margin-left: 40px;
+    border-radius: 8px;
+    width: 80%;
+    height: 100px;
+}
+.tablet .button{
+    
+    background: rgb(192, 24, 128);
+    width: 100px;
+    height: 30px;
+    border-radius: 11px;
+    margin: 1em 15em;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(172, 30, 201, 0.5);
+    font-family: 'DroidSerif';
+}
+
+.tablet .button:hover{
+    
+    background: rgb(233, 201, 240);
+    color: rgb(14, 1, 1);
+    box-shadow: 2px 2px 0 1px rgba(172, 30, 201, 0.5) ;
+    font-size: 13.5px;
+
+}
+
+
+.tablet{
+    font-family: 'OpenSans';
+}
+.tablet #nav-tablet{
+    opacity: 0.9;
+}
+
+
+
+
+/*-------------------------------------*/
+ .mobile-menu{
+     display: block;
+ }
+ .nav-list.active {
+    transform: translateX(0);
+ }
+ @keyframes navLinkFade {
+     from{
+         opacity: 0;
+         transform: translateX(50px);
+     }
+     to{
+         opacity: 1;
+         transform: translateX(0);
+     }
+ };
+
+.mobile-menu.active .icone{
+    
+}
+
+.active {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
