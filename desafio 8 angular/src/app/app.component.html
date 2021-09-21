@@ -1,0 +1,120 @@
+<head>
+
+<link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/fb18f7bea3.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <!----------scrip  -------------->
+    <script>
+        $(document).ready(function () { 
+               $("#icone").click(function () {
+                $("#menu").toggleClass("active")
+               })
+             
+             });
+
+       $(window).resize(function () {
+               if ($(document).innerWidth() > 700) { 
+                   $(".nav-list").removeClass("active")
+   } else {  
+   } }); 
+    </script>
+    <!---------------------------------->
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div><h3>Logotype</h3></div>
+            
+            <div class="mobile-menu">
+                <img id="icone" 
+                src="https://img.icons8.com/android/24/000000/menu.png" />
+                
+            </div>
+
+            <ul id="menu" class="nav-list"   >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">ContactUs</a>  </li>
+                <li> <button>Log in</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="nav-main">
+            <h1><strong>Questions? </strong> <br> 
+               <i>Contact us :)</i> </h1>
+    <!----------------
+    <section class="form">
+    
+     <div style="display: flex;">
+    
+        <div class="first-1" ><input type="text" name="teste" [(ngModel)]="nome">Nome</div>
+        <div class="first-2"><input type="text" name="teste" [(ngModel)]="email">E-mail</div>
+        
+     </div>
+    
+    <div class="second"><input type="text" name="teste" [(ngModel)]="subject">Subject</div>
+    <div class="third"><input type="text" name="teste" [(ngModel)]="message">Message</div>
+    
+    
+    </section>
+                                                        -->
+    <app-formulario></app-formulario>
+    
+    
+    </section>
+    
+          <div id="img" class="image">
+            <img width="85%" height="600px" src="../assets/img/foto original.png" alt="menino com um avião de papel correndo">
+            
+          </div> 
+    </main>
+
+    <!----------------------tablet--------------------------->
+ <!--- <section class="tablet">
+<div id="header">
+   <h1>Contact Us</h1>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae cum dicta placeat culpa distinctio, quia quasi provident ab ea molestiae expedita cupiditate, hic magnam! Perferendis quis voluptate magnam eveniet temporibus.</p>
+</div>
+<app-formulario></app-formulario>
+<div id="nav-tablet">
+
+    
+    <div class="name"><i class="far fa-user"></i> Name</div>
+    <div class="subject"><i class="far fa-envelope"></i> Your Subject</div>
+    <div class="message"><i class="far fa-comment-alt"></i> You Message</div>
+    
+</div>
+ 
+
+
+
+
+<button class="button">STAR CHAT</button>
+
+
+
+    </section>
+----------------------------------------------------------------> 
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
